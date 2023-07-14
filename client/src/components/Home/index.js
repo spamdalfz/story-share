@@ -1,37 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-`;
+// eslint-disable-next-line no-unused-vars
+//const ButtonContainer = styled.div`
+// display: flex;
+//justify-content: center;
+// margin-top: 1rem;
+//`;
 
-const StyledButton = styled.button`
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  transition: transform .2s;
-  box-shadow: 0px 4px 10px 3px rgba(0,0,0,0.75);
-  margin: 0 10px;
-  &:hover {
-    transform: scale(1.1);
-  }
-`;
+//const StyledButton = styled.button`
+//padding: 10px 20px;
+//border: none;
+//border-radius: 20px;
+// transition: transform .2s;
+//box-shadow: 0px 4px 10px 3px rgba(0,0,0,0.75);
+//margin: 0 10px;
+// &:hover {
+// transform: scale(1.1);
+// }
+//`;
 
 
 const Home = () => {
     const [stories, setStories] = useState([]);
 
-    const fetchStories = async () => {
-        try {
-            const response = await fetch('/api/stories'); // Update this with actual API endpoint
-            const data = await response.json();
-            setStories(data);
-        } catch (error) {
-            console.error('Failed to fetch stories:', error);
-        }
-    }
+    //const fetchStories = async () => {
+    // try {
+    // const response = await fetch('/api/stories'); // Update this with actual API endpoint
+    //  const data = await response.json();
+    //  setStories(data);
+    //  } catch (error) {
+    //      console.error('Failed to fetch stories:', error);
+    //  }
+    //  }
 
     useEffect(() => {
         //      fetchStories();
